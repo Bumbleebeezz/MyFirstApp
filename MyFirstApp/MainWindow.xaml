@@ -1,0 +1,25 @@
+﻿<Window x:Class="MyFirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyFirstApp"
+        mc:Ignorable="d"
+        Title="Maria" Height="450" Width="500" FontSize="35" FontFamily="Consolas">
+    <Grid Name="MyGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" Width="100" Name="UsernameLabel" TextAlignment="Center" Cursor="Pen">Num</TextBlock>
+        <!--<Label HorizontalAlignment="Center">Password</Label>
+        <Label HorizontalAlignment="Center">Confirm</Label>-->
+        <Button Grid.Column="0" Grid.Row="1"  Click="Button_PlusOne" FontWeight="Bold" FontSize="20">+ 1</Button>
+        <Button Grid.Row="2" Grid.Column="2" Click="Button_MinusOne" FontWeight="Bold" FontSize="20">- 1</Button>
+    </Grid>
+</Window>
